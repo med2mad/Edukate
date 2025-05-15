@@ -3,12 +3,12 @@ import { Router } from '@angular/router';
 import { Service } from '../service';
 
 @Component({
-  selector: 'app-course',
+  selector: 'app-inscription',
   imports: [],
-  templateUrl: './course.component.html',
-  styleUrl: './course.component.css'
+  templateUrl: './inscription.component.html',
+  styleUrl: './inscription.component.css'
 })
-export class CourseComponent {
+export class InscriptionComponent {
 
   constructor(private router: Router, private service: Service) {
     this.cours = service.cours;

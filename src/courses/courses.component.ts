@@ -3,12 +3,12 @@ import { Router } from '@angular/router';
 import { Service } from '../service';
 
 @Component({
-  selector: 'app-course',
+  selector: 'app-courses',
   imports: [],
-  templateUrl: './course.component.html',
-  styleUrl: './course.component.css'
+  templateUrl: './courses.component.html',
+  styleUrl: './courses.component.css'
 })
-export class CourseComponent {
+export class CoursesComponent {
 
   constructor(private router: Router, private service: Service) {
     this.cours = service.cours;
@@ -29,5 +29,6 @@ export class CourseComponent {
     if (category != "") { this.selectedCategory = category }
     this.router.navigate(['courses'], { queryParams: { selectedCategory: this.selectedCategory, searchText: this.service.searchText } })
   }
+
 
 }
