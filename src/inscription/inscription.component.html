@@ -6,27 +6,13 @@
                     <div class="form-row">
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <input id="name" type="text" class="form-control bg-light border-0" placeholder="Votre nom"
+                                <input required id="name" type="text" class="form-control bg-light border-0" placeholder="Votre nom"
                                     style="padding: 30px 20px;">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <input type="email" class="form-control bg-light border-0" placeholder="Votre e-mail"
-                                    style="padding: 30px 20px;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control bg-light border-0" placeholder="Votre ville"
-                                    style="padding: 30px 20px;">
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <input id="tel" type="text" class="form-control bg-light border-0" placeholder="Votre Nº tel"
+                                <input required type="email" class="form-control bg-light border-0" placeholder="Votre e-mail"
                                     style="padding: 30px 20px;">
                             </div>
                         </div>
@@ -34,7 +20,21 @@
                     <div class="form-row">
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <select id="message" class="custom-select bg-light border-0 px-3" style="height: 60px;">
+                                <input required type="text" class="form-control bg-light border-0" placeholder="Votre ville"
+                                    style="padding: 30px 20px;">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input required id="tel" type="text" class="form-control bg-light border-0" placeholder="Votre Nº tel"
+                                    style="padding: 30px 20px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <select required id="message" class="custom-select bg-light border-0 px-3" style="height: 60px;">
                                     <option disabled selected value="0">Cours ...</option>
                                     @for (category of categories; track category) {
                                         <option disabled value="{{category}}" style="color:#2878eb; text-align:center; font-weight:bold; border-bottom:solid 1px;border-top:solid 1px;">--{{category}}--</option>
